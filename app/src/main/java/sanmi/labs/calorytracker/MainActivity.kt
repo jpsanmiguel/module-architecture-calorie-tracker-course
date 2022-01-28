@@ -16,6 +16,8 @@ import sanmi.labs.calorytracker.ui.theme.CaloryTrackerTheme
 import sanmi.labs.core.navigation.Route
 import sanmi.labs.onboarding_presentation.screens.age.AgeScreen
 import sanmi.labs.onboarding_presentation.screens.gender.GenderScreen
+import sanmi.labs.onboarding_presentation.screens.height.HeightScreen
+import sanmi.labs.onboarding_presentation.screens.weight.WeightScreen
 import sanmi.labs.onboarding_presentation.screens.welcome.WelcomeScreen
 
 @AndroidEntryPoint
@@ -48,10 +50,16 @@ class MainActivity : ComponentActivity() {
 
                         }
                         composable(Route.HEIGHT) {
-
+                            HeightScreen(
+                                scaffoldState = scaffoldState,
+                                onNavigate = navController::navigate
+                            )
                         }
                         composable(Route.WEIGHT) {
-
+                            WeightScreen(
+                                scaffoldState = scaffoldState,
+                                onNavigate = navController::navigate,
+                            )
                         }
                         composable(Route.NUTRIENT_GOAL) {
 
