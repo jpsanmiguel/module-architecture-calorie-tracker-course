@@ -9,6 +9,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import sanmi.labs.core.data.preferences.DefaultPreferences
 import sanmi.labs.core.domain.preferences.Preferences
+import sanmi.labs.core.domain.use_case.FilterOutDigitsUseCase
 import javax.inject.Singleton
 
 const val SHARED_PREFERENCES = "shared_preferences"
@@ -29,5 +30,11 @@ object AppModule {
     @Singleton
     fun providePreferences(sharedPreferences: SharedPreferences): Preferences {
         return DefaultPreferences(sharedPreferences)
+    }
+
+    @Provides
+    @Singleton
+    fun provideFilterOutDigitsUseCase(): FilterOutDigitsUseCase {
+        return FilterOutDigitsUseCase()
     }
 }

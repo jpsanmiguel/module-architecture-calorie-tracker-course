@@ -1,4 +1,4 @@
-package sanmi.labs.onboarding_presentation.gender
+package sanmi.labs.onboarding_presentation.screens.gender
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme

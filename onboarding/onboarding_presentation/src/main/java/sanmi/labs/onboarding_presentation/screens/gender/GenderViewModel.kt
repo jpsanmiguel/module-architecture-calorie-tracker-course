@@ -1,4 +1,4 @@
-package sanmi.labs.onboarding_presentation.gender
+package sanmi.labs.onboarding_presentation.screens.gender
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

@@ -1,4 +1,4 @@
-package sanmi.labs.onboarding_presentation.welcome
+package sanmi.labs.onboarding_presentation.screens.welcome
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
