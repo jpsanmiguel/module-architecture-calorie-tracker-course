@@ -1,4 +1,4 @@
-package com.plcoding.calorytrackerprep.ui.theme
+package sanmi.labs.calorytracker.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

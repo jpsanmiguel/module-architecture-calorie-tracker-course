@@ -3,7 +3,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "CaloryTracker"
@@ -16,3 +15,4 @@ include ':tracker'
 include ':tracker:tracker_presentation'
 include ':tracker:tracker_data'
 include ':tracker:tracker_domain'
+include ':core-ui'
