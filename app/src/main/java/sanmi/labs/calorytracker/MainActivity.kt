@@ -14,8 +14,10 @@ import dagger.hilt.android.AndroidEntryPoint
 import sanmi.labs.calorytracker.navigation.navigate
 import sanmi.labs.calorytracker.ui.theme.CaloryTrackerTheme
 import sanmi.labs.core.navigation.Route
+import sanmi.labs.onboarding_presentation.screens.activity.ActivityScreen
 import sanmi.labs.onboarding_presentation.screens.age.AgeScreen
 import sanmi.labs.onboarding_presentation.screens.gender.GenderScreen
+import sanmi.labs.onboarding_presentation.screens.goal.GoalScreen
 import sanmi.labs.onboarding_presentation.screens.height.HeightScreen
 import sanmi.labs.onboarding_presentation.screens.weight.WeightScreen
 import sanmi.labs.onboarding_presentation.screens.welcome.WelcomeScreen
@@ -65,10 +67,10 @@ class MainActivity : ComponentActivity() {
 
                         }
                         composable(Route.ACTIVITY) {
-
+                            ActivityScreen(onNavigate = navController::navigate)
                         }
                         composable(Route.GOAL) {
-
+                            GoalScreen(onNavigate = navController::navigate)
                         }
                         composable(Route.TRACKER_OVERVIEW) {
 
