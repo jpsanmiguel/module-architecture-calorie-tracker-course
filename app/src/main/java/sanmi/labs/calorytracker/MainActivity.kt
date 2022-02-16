@@ -19,6 +19,7 @@ import sanmi.labs.onboarding_presentation.screens.age.AgeScreen
 import sanmi.labs.onboarding_presentation.screens.gender.GenderScreen
 import sanmi.labs.onboarding_presentation.screens.goal.GoalScreen
 import sanmi.labs.onboarding_presentation.screens.height.HeightScreen
+import sanmi.labs.onboarding_presentation.screens.nutrient_goal.NutrientGoalScreen
 import sanmi.labs.onboarding_presentation.screens.weight.WeightScreen
 import sanmi.labs.onboarding_presentation.screens.welcome.WelcomeScreen
 
@@ -64,7 +65,10 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(Route.NUTRIENT_GOAL) {
-
+                            NutrientGoalScreen(
+                                scaffoldState = scaffoldState,
+                                onNavigate = navController::navigate,
+                            )
                         }
                         composable(Route.ACTIVITY) {
                             ActivityScreen(onNavigate = navController::navigate)
