@@ -68,4 +68,17 @@ class DefaultPreferences(
             fatRatio = fatRatio
         )
     }
+
+    override fun saveShouldShowOnBoarding(shouldShowOnBoarding: Boolean) {
+        sharedPreferences.edit()
+            .putBoolean(Preferences.KEY_SHOULD_SHOW_ON_BOARDING, shouldShowOnBoarding)
+            .apply()
+    }
+
+    override fun loadShouldShowOnBoarding(): Boolean {
+        return sharedPreferences.getBoolean(
+            Preferences.KEY_SHOULD_SHOW_ON_BOARDING,
+            true
+        )
+    }
 }
